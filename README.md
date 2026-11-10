@@ -163,6 +163,32 @@ Nothing is remembered between sessions; if you start a new one, Claude asks agai
 
 ---
 
+## Make it yours
+
+Appeal Maker is open. **Reuse it, repurpose it, adapt it or build on it as you see fit, for your own
+channels or for clients, as long as you credit both Enric ([@enricpedro](https://x.com/enricpedro))
+and Factum Club ([factumclub.com](https://factumclub.com))** wherever you share or publish what you
+made from it.
+
+- **Just use it:** install it as a plugin (Option A) and you get every update.
+- **Adapt it to your channel:** copy the skill into `~/.claude/skills/appeal-maker` (Option B) and edit
+  `SKILL.md`: your tools, your production steps, your rules. Claude follows whatever you write there.
+- **Improve it for everyone:** fork this repository, make your change, and open a pull request. Good
+  fixes get merged and reach everyone who installed the plugin.
+- **Report an outcome:** won or lost an appeal with it? Open an issue with the **Appeal outcome**
+  form. Real outcomes are the most useful contribution: they keep the track record and the odds
+  honest.
+
+Three things before you fork or send a pull request:
+
+1. **Keep your own channel details out of it.** This repository is public, so anything you send back is
+   public too. Channel names, handles, links and numbers belong in your local copy only.
+2. **Rename the marketplace in your fork.** Change `"name"` in `.claude-plugin/marketplace.json` to
+   something other than `factum-skills`, or Claude Code will not let you add both yours and this one.
+3. **Keep the credit line** in `README.md`, `SKILL.md` and the scripts.
+
+---
+
 ## Factum Club
 
 <p><b>My YouTube network, run in the open.</b><br><i>What's done, not what's promised.</i></p>
@@ -197,10 +223,13 @@ Public posts show the results. Members get how it was done.
 | `plugins/appeal-maker/skills/appeal-maker/SKILL.md` | the method Claude follows |
 | `plugins/appeal-maker/skills/appeal-maker/scripts/shotlist-from-video.py` | finds the cuts in a finished video, saves one frame per shot, contact sheets |
 | `plugins/appeal-maker/skills/appeal-maker/scripts/annotate-script.py` | writes every image and card into the script at the exact line it appears |
+| `.github/ISSUE_TEMPLATE/` | the forms for reporting an appeal outcome or a problem |
 
 ## License
 
-MIT. Use it, change it, share it; keep the credit line.
+MIT. Use it, change it, share it, repurpose it, commercially or not, as long as the credit stays:
+**Enric ([@enricpedro](https://x.com/enricpedro)) and Factum Club ([factumclub.com](https://factumclub.com))**.
+See [LICENSE](LICENSE).
 
 ---
 

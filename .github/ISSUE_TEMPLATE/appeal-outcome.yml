@@ -1,0 +1,70 @@
+name: Appeal outcome
+description: Tell us how an appeal or reapply went with Appeal Maker. Every outcome makes the method better.
+title: "Outcome: <reused / generic-repetitive> - <won / lost / pending>"
+labels: ["outcome"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This page is public.** Do not post your channel name, handle, link, video titles or screenshots that show them. The niche and the numbers are enough.
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Rejection reason shown in Studio
+      options:
+        - Reused content
+        - Generic or repetitive content (inauthentic)
+        - Other (say which below)
+    validations:
+      required: true
+  - type: dropdown
+    id: route
+    attributes:
+      label: Route
+      options:
+        - Option 1, appeal by video
+        - Option 2, edit and reapply after 90 days
+        - Appeal first, then reapply
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Outcome
+      options:
+        - Won (monetized)
+        - Lost
+        - Still waiting
+    validations:
+      required: true
+  - type: input
+    id: time
+    attributes:
+      label: Time to decision
+      placeholder: e.g. 3 days, 2 hours, 2 weeks
+  - type: input
+    id: channel
+    attributes:
+      label: Channel type (no name)
+      description: Niche, language, how episodes are made, upload cadence.
+      placeholder: e.g. English history narration, AI images + licensed TTS, 3 uploads a week
+  - type: checkboxes
+    id: kit
+    attributes:
+      label: What the appeal or reapply included
+      options:
+        - label: Two-episode comparison
+        - label: Range grid of 8 to 10 episodes
+        - label: Variety / rotation rules doc
+        - label: Annotated script
+        - label: Layers demo (editor timeline)
+        - label: Titles and thumbnails changed before submitting
+        - label: Near-duplicate videos privated or removed (reapply only)
+        - label: AI disclosure set in Studio
+  - type: textarea
+    id: lesson
+    attributes:
+      label: What you learned
+      description: What worked, what did not, what you would change in the skill.
+    validations:
+      required: true

@@ -1,0 +1,20 @@
+name: Problem or idea
+description: Something in the skill or the scripts did not work, or could work better.
+labels: ["improvement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This page is public.** Leave out your channel name, links and private file paths.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, or what you would like
+      description: For errors, paste the message and the command or step where it appeared.
+    validations:
+      required: true
+  - type: input
+    id: setup
+    attributes:
+      label: Your setup
+      placeholder: e.g. macOS 15, Python 3.12, ffmpeg 7, plugin install
