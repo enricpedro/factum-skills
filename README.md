@@ -3,7 +3,7 @@
 # Appeal Maker
 
 **A Claude Code skill for YouTube monetization appeals.** Made by Enric
-([@enricpedro on X](https://x.com/enricpedro)) and shared free by
+([@enricpedro](https://x.com/enricpedro)) and shared free by
 **[Factum Club](https://factumclub.com)**.
 
 Your channel was rejected, suspended or demonetized for **reused content** or for **generic /
@@ -185,7 +185,7 @@ What members get:
 
 Public posts show the results. Members get how it was done.
 
-**[factumclub.com](https://factumclub.com)** · [@enricpedro on X](https://x.com/enricpedro). Join, or don't.
+**[factumclub.com](https://factumclub.com)**
 
 ---
 
