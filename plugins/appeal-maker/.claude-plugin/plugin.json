@@ -1,0 +1,12 @@
+{
+  "name": "appeal-maker",
+  "description": "Build a YouTube monetization appeal for a channel rejected or suspended for reused or generic/repetitive content: pick the route, build the reviewer docs, the annotated script, the layers demo and the appeal video script.",
+  "author": {
+    "name": "Enric (Factum Club)",
+    "url": "https://x.com/enricpedro"
+  },
+  "homepage": "https://factumclub.com",
+  "repository": "https://github.com/enricpedro/factum-skills",
+  "license": "MIT",
+  "keywords": ["youtube", "monetization", "appeal", "ypp", "reused-content", "repetitive-content"]
+}

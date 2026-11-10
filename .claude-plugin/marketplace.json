@@ -1,0 +1,15 @@
+{
+  "name": "factum-skills",
+  "description": "Claude Code skills from Factum Club: tools from a YouTube network run in the open",
+  "owner": {
+    "name": "Enric (Factum Club)",
+    "url": "https://factumclub.com"
+  },
+  "plugins": [
+    {
+      "name": "appeal-maker",
+      "source": "./plugins/appeal-maker",
+      "description": "Build a YouTube monetization appeal (reused or generic/repetitive content): route, docs, annotated script, layers demo and the appeal video script"
+    }
+  ]
+}
