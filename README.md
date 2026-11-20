@@ -59,7 +59,10 @@ own automation. It never asks you to tell YouTube anything untrue.
 - Generic / repetitive appeals add a "not a factory" layer: runtimes that follow the story and the
   decisions a person made.
 - The causes behind unsatisfying / off-putting rejections come from Pedro
-  ([@howtopedro](https://x.com/howtopedro)), a creator with years in the YouTube space. Thank you.
+  ([@howtopedro](https://x.com/howtopedro)).
+
+Have more insights, or want to take part in this project? Please reach out on X
+([@enricpedro](https://x.com/enricpedro)) or open an issue.
 
 ---
 

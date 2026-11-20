@@ -58,8 +58,7 @@ Studio shows two options. They are different strategies; never mix their logic.
   legal, money or political information as if a human expert. Likes, comments and retention protect
   against none of them: the review judges whether the format is suitable, not whether it is popular.
 - **How a story channel trips "unsatisfying or off-putting".** These causes come from Pedro
-  ([@howtopedro](https://x.com/howtopedro)), a creator with years in the YouTube space, and match the
-  public reports:
+  ([@howtopedro](https://x.com/howtopedro)) and match the public reports:
   - **Emotional-bait titles and premises** built on humiliation, a deception or test, a hidden
     identity or a staged misunderstanding ("Everyone laughed at her old dress, until...", "not
     knowing...", "dressed in rags to test the bride"), even when the ending is wholesome.
