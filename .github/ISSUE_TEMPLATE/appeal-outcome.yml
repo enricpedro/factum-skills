@@ -1,6 +1,6 @@
 name: Appeal outcome
 description: Tell us how an appeal or reapply went with Appeal Maker. Every outcome makes the method better.
-title: "Outcome: <reused / generic-repetitive> - <won / lost / pending>"
+title: "Outcome: <reused / generic-repetitive / off-putting> - <won / lost / pending>"
 labels: ["outcome"]
 body:
   - type: markdown
@@ -14,6 +14,7 @@ body:
       options:
         - Reused content
         - Generic or repetitive content (inauthentic)
+        - Unsatisfying or off-putting content (inauthentic)
         - Other (say which below)
     validations:
       required: true
@@ -55,10 +56,13 @@ body:
       options:
         - label: Two-episode comparison
         - label: Range grid of 8 to 10 episodes
+        - label: Story arcs of 3 to 4 episodes
+        - label: Coherence proof (images matched to lines, consistent characters)
         - label: Variety / rotation rules doc
         - label: Annotated script
         - label: Layers demo (editor timeline)
         - label: Titles and thumbnails changed before submitting
+        - label: Bait titles dropped or rewritten
         - label: Near-duplicate videos privated or removed (reapply only)
         - label: AI disclosure set in Studio
   - type: textarea

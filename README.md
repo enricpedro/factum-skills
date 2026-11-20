@@ -6,33 +6,54 @@
 ([@enricpedro](https://x.com/enricpedro)) and shared free by
 **[Factum Club](https://factumclub.com)**.
 
-Your channel was rejected, suspended or demonetized for **reused content** or for **generic /
-repetitive (inauthentic) content**? This skill makes Claude:
+Your channel was rejected, suspended or demonetized for **reused content**, for **generic /
+repetitive content** or for **unsatisfying / off-putting content** (the last two are branches of
+"inauthentic content")? This skill makes Claude:
 
 - **pick the right route** with you: appeal now (Option 1) or edit the channel and reapply after 90
   days (Option 2), with YouTube's official rules and honest odds, and protect your other channels
   while the suspension lasts
 - build the **appeal video script** (under 5 minutes), with the exact screen to show at every moment
 - build a **Google Drive folder** of reviewer-ready docs: channel bible, production rules, one doc per
-  episode, a side-by-side comparison (reused) or a 10-episode range grid plus your variety rules
-  (generic / repetitive), and an **annotated script** that shows every image and on-screen card on
-  the line where it appears
+  episode, a side-by-side comparison (reused), a 10-episode range grid plus your variety rules
+  (generic / repetitive) or 3 to 4 story arcs plus how you keep pictures, words and faces consistent
+  (unsatisfying / off-putting), and an **annotated script** that shows every image and on-screen card
+  on the line where it appears
 - prepare the **media** you show on screen: voiceover MP3, frames, cards, a **layers demo** of your
   edit, a chapters-and-facts cut
 - suggest **new titles and thumbnail briefs** for your videos when your rejection is generic /
-  repetitive (one title formula and one thumbnail layout are the most reported trigger), and leave them
-  alone when it is reused content, where they are not the issue
+  repetitive (one title formula and one thumbnail layout are the most reported trigger) or unsatisfying
+  / off-putting (bait titles built on humiliation, a test or a hidden identity), and leave them alone
+  when it is reused content, where they are not the issue
 - write the **title and description** for the unlisted appeal video
+- tell you **how to avoid the same rejection next time**: what triggered it on your channel, the
+  production rules that prevent it, and the trade-offs that are yours to decide
 
 **What to expect.** For **reused content** the method is proven: 3 appeals, 3 channels monetized. For
 **generic or repetitive content** appeals rarely win for story and narration channels (ours lost, and
-no public win was found in about 12 cases): the realistic route there is a varied catalogue and a
-reapply after 90 days, and the skill tells you so and helps with both. A failed appeal costs you no
-reapply time.
+no public win was found in about 12 cases). For **unsatisfying or off-putting content** no public win
+has been found yet. For both, the realistic route is a cleaned-up, varied catalogue and a reapply after
+90 days, and the skill tells you so and helps with both. A failed appeal costs you no reapply time.
 
 It works with any niche and any production method: video editor, AI video tool, human editor or your
 own automation. It never asks you to tell YouTube anything untrue.
 
+## What's new
+
+**v1.1.0 (2026-11-20)**
+
+- New rejection type: **unsatisfying or off-putting content**, the branch of "inauthentic content"
+  YouTube spelled out in July 2026, with its own appeal route (earned story arcs, the value on screen,
+  how pictures, words and faces are kept consistent).
+- The channel audit now counts bait titles, checks upload cadence and how fixed your runtimes are,
+  samples random moments of your newest videos for pictures that do not match the narration, and
+  checks for an AI presenter giving advice on sensitive topics.
+- Every appeal now ends with **how to avoid this rejection next time**: your channel's triggers,
+  forward production rules, and the decisions that stay yours (with their trade-offs).
+- Generic / repetitive appeals add a "not a factory" layer: runtimes that follow the story and the
+  decisions a person made.
+- The causes behind unsatisfying / off-putting rejections come from Pedro
+  ([@howtopedro](https://x.com/howtopedro)), a creator with years in the YouTube space. Thank you.
 
 ---
 
@@ -129,18 +150,22 @@ Nothing is remembered between sessions; if you start a new one, Claude asks agai
    1. **Explains the route**: what the appeal and the reapply each mean for you, the odds for your
       rejection reason, and what not to do (never delete videos before an appeal, hold YPP
       applications on your other channels).
-   2. **Audits your channel** the way a reviewer sees it (name, About, title patterns, thumbnails,
-      upload cadence, near-identical episodes, AI disclosure) and lists the risks. For a generic /
-      repetitive rejection it also drafts a **Titles and Thumbnails sheet**: a new title and a
-      thumbnail brief per video, newest and most viewed first. You decide what to apply, by hand in
-      Studio.
-   3. **Picks the episodes**: two very different published ones (reused) or 8 to 10 (generic /
-      repetitive), and one recent episode to walk through.
+   2. **Audits your channel** the way a reviewer sees it (name, About, title patterns, bait titles,
+      thumbnails, upload cadence and runtimes, near-identical episodes, random moments where the
+      picture may not match the narration, AI presenters on sensitive topics, AI disclosure) and lists
+      the risks. For a generic / repetitive or unsatisfying / off-putting rejection it also drafts a
+      **Titles and Thumbnails sheet**: a new title and a thumbnail brief per video, newest and most
+      viewed first. You decide what to apply, by hand in Studio.
+   3. **Picks the episodes**: two very different published ones (reused), 8 to 10 (generic /
+      repetitive) or 3 to 4 with real story arcs (unsatisfying / off-putting), and one recent episode
+      to walk through.
    4. **Builds the docs** in Google Drive.
    5. **Builds the annotated script** of the walkthrough episode, straight from your final video.
    6. **Prepares the media** to show on screen, including the layers demo.
    7. **Writes the appeal video script** and the upload title and description, then checks the kit
       against the whole method before handing it over.
+   8. **Tells you how to avoid it next time**: what triggered the rejection on your channel and the
+      production rules that prevent it.
 5. **Do the "Before you record" checklist** at the top of the appeal script doc. Then record:
    face cam for the open and close, screen recording for the middle, following the [SCREEN] cues.
 6. Upload the video as **Unlisted** on the same channel (keep it there) and submit its link in the

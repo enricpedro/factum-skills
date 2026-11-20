@@ -1,6 +1,6 @@
 ---
 name: appeal-maker
-description: Handle a YouTube Partner Program rejection or suspension for reused content, or for generic / repetitive / inauthentic content, in any niche and with any production method - pick the right route (appeal or edit-and-reapply) and build the appeal video script plus every Google Doc and media file it shows (channel bible, production rules, episode docs, range grid or comparison, annotated script with image and card placement, voiceover MP3, layers demo). Use when the user says a channel was rejected, suspended or demonetized for reused or generic/repetitive content, asks for an appeal, an appeal video, an appeal script, or "appeal maker".
+description: Handle a YouTube Partner Program rejection or suspension for reused content, generic / repetitive content, or unsatisfying / off-putting content (the inauthentic-content branches), in any niche and with any production method - pick the right route (appeal or edit-and-reapply), build the appeal video script plus every Google Doc and media file it shows (channel bible, production rules, episode docs, range grid, story arcs or comparison, annotated script with image and card placement, voiceover MP3, layers demo), and say how to avoid that rejection in future. Use when the user says a channel was rejected, suspended or demonetized for reused, generic/repetitive or unsatisfying/off-putting content, asks for an appeal, an appeal video, an appeal script, or "appeal maker".
 ---
 
 # Appeal maker
@@ -19,12 +19,14 @@ install). The two helper scripts are in `<skill dir>/scripts/`.
 | Reused content (story channel, AI images, licensed TTS) | 1 | monetized |
 | Reused content (history channels using public-domain archive photos) | 2 | both monetized |
 | Generic or repetitive content (story channel) | 1 | refused |
+| Unsatisfying or off-putting content | 0 | no track record yet |
 
 **The reused-content recipe is proven (3 of 3). The same recipe has NOT worked for generic or
 repetitive content.** Public creator reports agree: reused-content appeals on AI story channels often
 win, generic/repetitive appeals on story or narration channels almost never do (0 wins in about 12
-public cases found, Nov 2026). Pick the route and the argument by the rejection reason, below, before
-building anything. When the user reports an outcome, tell them to add it to this table with one line
+public cases found, Nov 2026). For unsatisfying or off-putting content no documented win was found
+(Nov 2026): treat it like generic or repetitive. Pick the route and the argument by the rejection
+reason, below, before building anything. When the user reports an outcome, tell them to add it to this table with one line
 on what it teaches.
 
 ## Read the rejection screen first: which option, which policy
@@ -48,6 +50,28 @@ Studio shows two options. They are different strategies; never mix their logic.
   narrative, AI content from generic templates "giving the impression of mass production". Allowed: the
   same intro and outro when the body differs; recurring formats where each video has its own story,
   focus or concept; AI used to edit scripts or make unique visuals.
+- **"Inauthentic content" has three branches** (YouTube's July 2026 clarification, as reported by
+  Dexerto, Moneywise, Search Engine Journal and Metricool): (1) generic or repetitive, above;
+  (2) **unsatisfying or off-putting**: emotionally manipulative formulas, shock or surprise purely for
+  views, nonsensical content (YouTube's example: an animal seemingly in distress, conveniently
+  rescued), with or without AI; (3) **AI personas on sensitive topics**: an AI presenter giving health,
+  legal, money or political information as if a human expert. Likes, comments and retention protect
+  against none of them: the review judges whether the format is suitable, not whether it is popular.
+- **How a story channel trips "unsatisfying or off-putting".** These causes come from Pedro
+  ([@howtopedro](https://x.com/howtopedro)), a creator with years in the YouTube space, and match the
+  public reports:
+  - **Emotional-bait titles and premises** built on humiliation, a deception or test, a hidden
+    identity or a staged misunderstanding ("Everyone laughed at her old dress, until...", "not
+    knowing...", "dressed in rags to test the bride"), even when the ending is wholesome.
+  - **Series production with no visible human hand**: daily uploads of a near-fixed long runtime,
+    photoreal AI stills acting as slides, synthetic narration, recognisable AI script shapes. Together
+    they read as a content farm with no "meaningful creative value".
+  - **Incoherence**: pictures that do not match the narration, characters whose face or clothes change
+    between shots, plots that circle to stretch the runtime. Reviewers find it by sampling random
+    moments of a video.
+  - The last two causes also drive generic or repetitive rejections.
+- **Odds for "unsatisfying or off-putting"**: no documented win found (Nov 2026). As with generic or
+  repetitive, the reapply after a cleanup is the main route and the appeal a cheap extra.
 - **What reviewers look at.** They "can't check every video": the main theme, the NEWEST and MOST
   VIEWED videos, the biggest share of watch time, titles, thumbnails, descriptions and the About.
 - **Appeal mechanics.** About 21 days to appeal (7 for a scheduled suspension); decision within 14
@@ -81,8 +105,9 @@ Studio shows two options. They are different strategies; never mix their logic.
   set the "altered or synthetic content" disclosure where it applies, keep uploading varied videos.
 - **Do not open with a menu of routes.** When the user says appeal, build the appeal. Give the odds
   and the related-channel risk once, factually, never to steer them away from appealing.
-- **For generic / repetitive**, say once that the reapply after a visibly varied catalogue is the
-  documented winning route and the appeal is a cheap extra (no time cost). Suggest submitting near the
+- **For generic / repetitive and for unsatisfying / off-putting**, say once that the reapply after a
+  visibly varied, cleaned-up catalogue is the documented winning route and the appeal is a cheap extra
+  (no time cost). Suggest submitting near the
   deadline. After a refusal, a live-chat escalation through Creator Support has one documented
   overturn; contacting TeamYouTube otherwise changes nothing.
 - **The honest grid test before an appeal**: open the Videos tab as a stranger and watch 3 videos in a
@@ -111,11 +136,74 @@ Studio shows two options. They are different strategies; never mix their logic.
      across these 10 episodes"), and sources or research where the channel keeps them.
   4. **One episode walked through** (brief to finished edit), as in the reused recipe, shorter.
   5. Viewer comments that talk about a SPECIFIC story or fact (the user copies them; real only).
+  6. **Not a factory**: the grid gets a RUNTIME column showing the length follows the story (a real
+     spread, not one target); the walkthrough adds a short "decisions a person made" beat (which brief
+     was picked and why, a rejected draft or image, an edit made at a review pass); the channel's ONE
+     defined look and its consistent cast are shown as a series with an author. Only what is real.
   Be honest with the user about what the catalogue shows (title templates, near-twins, viewer comments
-  calling two episodes the same): name them as risks, then build the strongest true case.
+  calling two episodes the same, a fixed runtime, a daily cadence): name them as risks, then build the
+  strongest true case.
+- **Unsatisfying or off-putting content** ("is this built to manipulate, shock or confuse, without
+  real creative or educational value?"): ownership and variety are not the question. The argument is
+  that the emotion is EARNED and the work is COHERENT:
+  1. **Earned emotion, a real arc**: 3 to 4 published episodes summarised as arcs (setup, the
+     characters' own choices, the turn, the resolution), showing the story moves by what people decide,
+     not by a staged cruelty or reveal. Pick episodes whose titles name a journey, a place or a real
+     dilemma; keep bait-titled ones off screen and list them to the user as risks.
+  2. **The value layer** (as in generic / repetitive): real facts on screen, counted.
+  3. **Coherence as a system**: how the channel keeps picture, words and faces together. One real
+     example each, only of what the channel really does: an image checked against the line it sits
+     under and redone when it did not match (your own check that each image matches its line), a
+     reference portrait reused for a recurring character across scenes, a problem caught in a review
+     pass before upload and fixed; and that the length is set by the story.
+  4. **One episode walked through** (brief to finished edit), shorter.
+  Never call invented stories "true": say "original stories" (set in real history, or the niche's
+  equivalent).
+- **AI persona on sensitive topics**: relevant only if the channel's presenter gives health, legal,
+  money or political information. Step 0 checks it. A designed digital host on non-advice topics is
+  described as "a digital host we designed for the channel", never as a person or an expert. If the
+  host does give that kind of advice, tell the user plainly that the format itself is the problem and
+  the reapply route (with the format changed) is the realistic one.
 
 Either way: wrapped in a face-cam open and close, a real person, calm, says they know the rules and
 follow them. Chapter 1 opens by answering the stated policy (Step 5).
+
+## How to avoid it next time (part of EVERY appeal reply)
+
+The reply that delivers the kit ends with a short "How to avoid this next time" section for the
+rejected policy: what triggered it on THIS channel (from Step 0, with the counts), the forward rules
+below, and the decisions for the creator that apply. Plain words, one line each. These are forward
+production rules: on Option 1 they never become edits to the published channel.
+
+- **Reused content**: everything heard is the channel's own; archive pictures always transformed
+  (chosen for one line, reframed, moved, explained with the channel's own facts, maps and captions);
+  no clips, readings or narration from others; keep the transformation visible in the first minutes,
+  where reviewers look.
+- **Generic or repetitive**: no title shape on more than 1 in 4 of the last 30, never the same shape
+  twice running; rotate premise, turn and structure, not only names; every episode carries substance a
+  template cannot produce (real facts, sources, analysis); let the story set the runtime (a real
+  spread, not one target); a cadence a person could keep, publish times not fixed to the minute; one
+  defined look with a consistent cast; near-twins never published close together.
+- **Unsatisfying or off-putting**: titles from the story's journey, place or real dilemma, not the
+  humiliation / test / hidden-identity / "until" / "not knowing" shapes; vary the hook so no bait type
+  is on more than 1 in 4; the emotion comes from the characters' own choices, not a staged cruelty or
+  misunderstanding; every picture matches the words over it; faces and clothes stay the same across a
+  story (a reference portrait per recurring character); no padding to reach a length; fewer, better
+  pictures in one style beat hundreds of near-matches; a review pass before upload that catches
+  mismatched or inconsistent shots.
+- **AI persona on sensitive topics**: a digital host never gives health, legal, money or political
+  advice as an expert; keep host channels on non-advice topics.
+- Before the next uploads or the reapply, run the Step 0 audit again on the channel (and on any other
+  channels on the same AdSense account) and fix what it finds.
+
+**Decisions for the creator** (neutral: raise the ones that apply, one line each, with the trade-off;
+never apply or recommend one by default):
+1. Studio's "altered or synthetic content" toggle on realistic AI pictures.
+2. A real human presence: a short intro in the creator's own voice or on camera, the process explained
+   in the About. Never claim a human narrator when a licensed voice narrates.
+3. Dropping bait title formulas (it usually costs click-through rate).
+4. Fewer uploads and natural lengths (cadence is a production decision).
+5. One illustrated style instead of photoreal pictures.
 
 ## Setup: the evidence inventory (always first)
 
@@ -137,6 +225,10 @@ Ask once, then reuse the answers for the rest of the session:
    briefs, script, images / footage, image prompts, voiceover, music, subtitles, on-screen cards, edit
    project, final video), whether it exists and where. Missing layers are fine; the appeal shows what
    exists.
+4. For an **unsatisfying or off-putting** rejection, also ask for proof of coherence, if any exists:
+   checks that each image matches its line (and images redone after one), reference portraits reused
+   for recurring characters, notes from a review pass before upload, and how runtime is decided. Never
+   present a check the user does not really run.
 
 **Where the files are.** Claude reads files straight from the computer; nothing is linked or
 configured. Work from the folder Claude Code was started in. For files elsewhere, ask for the path (the
@@ -161,8 +253,11 @@ the user pastes it), ffmpeg locally; optionally Premiere Pro with the `premiere-
   Truthful phrasings that work:
   - voice: "recorded from our final script with a licensed narration voice"
   - images: "made for this episode from our own written description of each scene"
-  - host avatar (persona channels): "our presenter, a digital host we designed for the channel"
+  - host avatar (persona channels): "our presenter, a digital host we designed for the channel", never
+    a person or an expert
   - scripts: "written for the channel, revised in several passes before approval" (say the real number)
+  - invented stories: "original stories set in real history" (or the niche's equivalent), never "true
+    stories"
 - **Check AI disclosure BEFORE recording.** Look at the descriptions of the episodes you will show:
   fiction disclaimer yes/no, production disclosure yes/no, Studio's "Altered or synthetic content"
   toggle yes/no. Either the user adds the disclosure and ticks the toggle on the episodes shown, or the
@@ -200,8 +295,18 @@ recommending on either route, as a correction:
   reads as repetitive. Count it ("N of M titles on one shape") so the risk is concrete. Flag it as the
   user's call (retitling can cost CTR); never retitle yourself.
 - **Thumbnails.** One layout on every video reads as packaging sameness, often the first thing flagged.
-- **Cadence and twins.** Uploads per week, and episodes that viewers (or the user's own notes) call
-  near-identical. Risks for a repetitive review; keep near-twins out of the grid and the comparison.
+- **Bait titles** (unsatisfying / off-putting, and repetitive). Count the titles whose hook is
+  humiliation, a deception or test, a hidden identity, a staged misunderstanding or a rescue from
+  distress ("until", "not knowing", "to test", "in rags", "laughed at"), e.g. "12 of the last 30".
+- **Cadence, runtime and twins.** Uploads per week; the runtime spread of the last 30 (the share
+  within 10% of the median runtime): daily uploads at a near-fixed long length read as a content farm.
+  Episodes that viewers (or the user's own notes) call near-identical. Risks for a repetitive review;
+  keep near-twins out of the grid and the comparison.
+- **Random-moment coherence** (how reviewers sample). Pull frames at 6 to 8 random points of the two
+  newest long videos and compare each frame with the words heard there (subtitles or a transcript);
+  look for faces or clothes that change between shots of the same character, and for a plot that
+  circles to stretch the runtime. Each hit is a risk line; keep those videos out of the appeal.
+- **AI persona check.** Does any presenter give health, legal, money or political information?
 - **Disclosure.** As in the hard rules.
 
 ## Step 0b. Titles and thumbnails: suggestions by rejection type
@@ -234,6 +339,16 @@ user applies every change by hand.
   - **Mark the top performers.** Retitling can cost clicks on videos that work: flag them so the user
     can choose to keep their title and change only the thumbnail.
   - **Future uploads:** add a rotation plan for the next 10 titles (which shape each one uses).
+- **Unsatisfying or off-putting content: the titles and thumbnails ARE part of the trigger** (the bait
+  premise is sold there). Build the same "Titles and Thumbnails" sheet, with these changes:
+  - **Titles:** flag every bait title from Step 0 (humiliation, deception or test, hidden identity,
+    staged misunderstanding, rescue from distress, "until", "not knowing"). The suggested title leads
+    with the story's journey, place or real dilemma and still promises what the video delivers. No
+    bait shape on more than about 1 in 4 if the user keeps some. Dropping them usually costs clicks:
+    say so, it is the user's call.
+  - **Thumbnails:** no staged humiliation, distress or shock scene the video does not resolve
+    honestly; the scene shows a real moment of that story, with the same face and clothes the
+    character has in the video.
 - **By route:** on Option 1 the sheet is a suggestion and stays the user's call. If they apply it,
   apply it channel-wide (at least the whole reviewer sample) before submitting, never to a handful of
   videos, and never delete anything. On Option 2 it is part of the fix list: apply it before
@@ -250,7 +365,10 @@ List the channel's published videos (most popular first, and newest first).
   topics and different sets / looks if the channel has them.
 - **Range grid (generic / repetitive; 8 to 10 published):** the most different episodes across the
   catalogue, including top performers and recent uploads (the reviewer's sample), no near-twins.
-- **Walkthrough episode (1, both policies):** the recent episode with the most layers still on disk
+- **Arcs (unsatisfying / off-putting; 3 to 4 published):** episodes whose story moves by the
+  characters' own choices, with titles that name a journey, a place or a real dilemma, and that passed
+  the random-moment coherence check. No bait-titled episode, none with a mismatch found in Step 0.
+- **Walkthrough episode (1, every policy):** the recent episode with the most layers still on disk
   per the inventory (script, images or footage, prompts, voiceover, edit project). Finished but not yet
   published is ideal (it shows the next video is original too); a published one works. Prefer the
   newest, so it shows the channel's current format.
@@ -280,8 +398,12 @@ public link.
    publish date. Close with what is unique per episode, and be exact about anything shared (e.g. a
    standing subscribe line).
 5. **Generic / repetitive: the range grid doc** (one row per episode: title, URL, setting, central
-   figure, conflict, turn, ending, real facts taught, publish date), **the variety rules doc** (Step 1
-   of "Which argument"), and the fact count.
+   figure, conflict, turn, ending, real facts taught, runtime, publish date), **the variety rules
+   doc** (Step 1 of "Which argument"), and the fact count.
+6. **Unsatisfying / off-putting: the arcs doc** (one section per episode: title, URL, setup, the
+   characters' own choices, the turn, the resolution, the real facts it teaches) and **the coherence
+   doc** (how picture, words and faces are kept together, with the one real example of each check from
+   the inventory, and how runtime is decided).
 
 ## Step 3. The annotated script (the strongest single document)
 
@@ -422,13 +544,21 @@ For a **generic or repetitive** rejection, swap chapter 2 for the range grid (th
 watch pages, about 90 s), and put the variety rules and the fact count in chapter 3. Chapters 4 to 7
 stay, shorter.
 
+For an **unsatisfying or off-putting** rejection, swap chapter 2 for the arcs (3 to 4 episodes: the
+arcs doc plus their watch pages, about 75 s), add "Coherence: how picture, words and faces are kept
+together" as a new chapter after chapter 5 (about 40 s: the image checked against its line and redone,
+the reference portrait across scenes, a review finding fixed), and keep the rest shorter so the video
+stays under 5 minutes.
+
 **Chapter 1 answers the rejection first.** After the name, the first thing said is why the channel
 does not fall under the rejected policy. Reused: everything heard and seen was made for the channel
 (research, script, narration, images). Reused on an archive-media channel: everything heard is ours,
 and the public-domain archive photos are transformed (chosen for one line, reframed, animated,
 explained with our own facts, maps and captions). Generic or repetitive: every episode is a different
 story with its own setting, people and ending, and each one teaches real facts on screen (adapt to the
-niche). Only then the one-line description of the channel. Change ONLY that opening; keep the
+niche). Unsatisfying or off-putting: every episode is a complete story with its own characters and a
+real arc, set in real history (or the niche's equivalent) and explained on screen, with picture and
+narration checked against each other. Only then the one-line description of the channel. Change ONLY that opening; keep the
 seven-chapter order and do not reorder the script around the argument.
 
 The Doc opens with a "Before you record" checklist (Step 0 findings as risks, disclosure, tab order,
@@ -447,11 +577,17 @@ appeal:
    - reused: "No footage, clips or narration from other creators are used."
    - generic / repetitive: "Each episode is planned to be different from the ones before it: a new
      place, a new period, a new case and a new structure." (adapt the four nouns to the niche)
+   - unsatisfying / off-putting: "Each episode is a complete story with its own characters and arc,
+     set in real history, with every scene image checked against the narration it sits under." (adapt
+     to the niche; say only what is true)
 4. Reused: "This video compares two published episodes to show they are separate stories, not one
    template repeated, and then walks through how a new episode is made, from <docs> to <layers> and
    the finished edit." Generic / repetitive: "This video shows ten published episodes side by side,
    each with its own setting, people, ending and facts, the rules that keep every episode different,
-   and how a new episode is made, from <docs> to <layers> and the finished edit."
+   and how a new episode is made, from <docs> to <layers> and the finished edit." Unsatisfying /
+   off-putting: "This video follows several published stories from setup to resolution, shows how
+   every picture is matched to its line and every character kept the same from scene to scene, and how
+   a new episode is made, from <docs> to <layers> and the finished edit."
 
 Example (reused rejection, monetized after appeal):
 ```
@@ -480,18 +616,22 @@ TRANSFORMATIVE USE and make it the centre of the appeal (this route won twice):
 - Add "How we use archive images" to the rules doc, and a doc of its own with the panels.
 - **Audit the archive picks:** a photo of the wrong person under narration about someone else, or a
   narrator's paraphrase shown as a quote card attributed to a real person, must stay off screen and be
-  flagged.
+  flagged. The same mismatch is what the random-moment sample (Step 0) catches on an unsatisfying or
+  off-putting review: count it there too.
 
 ## Adapting by niche
 
 - **Story / fiction:** comparison by premise; walkthrough shows character consistency (same faces in
   every scene) and the set pieces. On generic / repetitive, the grid must show different endings, not
-  only different names.
+  only different names. On unsatisfying / off-putting, the arcs must turn on the characters' own
+  choices, not on a staged humiliation, test or hidden-identity reveal.
 - **Documentary / history / mystery:** comparison by subject AND structure; the rules doc adds the
   sources list and fact checks; show the sources doc if the channel keeps one. Folklore: say the
   stories are retold traditions, never claim sourcing they do not have.
 - **Host / persona:** show the presenter step honestly (a designed digital host if it is one);
-  comparison can include different sets / looks; name the voice as the host's licensed voice.
+  comparison can include different sets / looks; name the voice as the host's licensed voice. A
+  digital host on health, legal, money or political topics falls under "AI personas on sensitive
+  topics" (Which argument per policy).
 - **Sleep / long-form:** comparison by subject; stress the research and the length of original
   narration.
 - **Human editor:** the edit walkthrough is the editor's real work; ask for timeline screenshots.
@@ -506,8 +646,10 @@ runtime of the script is under 5 minutes.
 
 Report: the Drive folder link, every doc link (including the Titles and Thumbnails sheet when one was
 made), the media folder, the route and the odds in one line
-each, the related-channel hold if it applies, what to check before recording, and anything that could
-NOT be shown truthfully (missing disclosure, missing working files). Ask whether to keep or trash
+each, the related-channel hold if it applies, what to check before recording, anything that could
+NOT be shown truthfully (missing disclosure, missing working files), and the "How to avoid this next
+time" section for the rejected policy (this channel's triggers with counts, the forward rules, the
+decisions for the creator that apply). Ask whether to keep or trash
 earlier drafts. When the user reports the outcome, suggest adding it to the track record at the top
 with one line on what it teaches (a refusal is a lesson to write down, not just a status).
 
