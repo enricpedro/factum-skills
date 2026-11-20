@@ -155,7 +155,11 @@ Studio shows two options. They are different strategies; never mix their logic.
      example each, only of what the channel really does: an image checked against the line it sits
      under and redone when it did not match (your own check that each image matches its line), a
      reference portrait reused for a recurring character across scenes, a problem caught in a review
-     pass before upload and fixed; and that the length is set by the story.
+     pass before upload and fixed; and that the length is set by the story. **If the evidence
+     inventory says the creator does not run a check (for example, images are NOT checked against
+     their lines), drop that claim EVERYWHERE**: the bible, the rules doc, every chapter of the appeal
+     script and the upload description. Lean on the checks they really run; if they run none, leave
+     coherence out of the argument and tell the user it is a weak point.
   4. **One episode walked through** (brief to finished edit), shorter.
   Never call invented stories "true": say "original stories" (set in real history, or the niche's
   equivalent).
@@ -196,6 +200,9 @@ production rules: on Option 1 they never become edits to the published channel.
 - Before the next uploads or the reapply, run the Step 0 audit again on the channel (and on any other
   channels on the same AdSense account) and fix what it finds.
 
+For the **unsatisfying or off-putting** route, the section written for the user ends with this line,
+as is: "The causes behind this rejection type come from Pedro ([@howtopedro](https://x.com/howtopedro))."
+
 **Decisions for the creator** (neutral: raise the ones that apply, one line each, with the trade-off;
 never apply or recommend one by default):
 1. Studio's "altered or synthetic content" toggle on realistic AI pictures.
@@ -211,8 +218,10 @@ This skill works with ANY production method. Never assume a particular tool or p
 shows the user's real process, so first find out what that process is and what proof of it exists.
 Ask once, then reuse the answers for the rest of the session:
 
-1. Channel URL, channel ID, the exact rejection reason, which options the Studio screen offers, and
-   the deadline. Whether the user runs other monetized channels (related-channel risk).
+1. Channel URL (only the URL: derive the channel ID yourself, e.g. `yt-dlp --print channel_id
+   --playlist-items 1 <channel URL>/videos`, or from the page), the exact rejection reason, which
+   options the Studio screen offers, and the deadline. Whether the user runs other monetized channels
+   (related-channel risk).
 2. How an episode is made, step by step, and with what. Common shapes:
    - **Video editor** (Premiere, DaVinci, CapCut, Final Cut): the edit project is the proof.
    - **All-in-one AI video tool** (script in, video out): the tool's project page, its scene list and
@@ -227,8 +236,9 @@ Ask once, then reuse the answers for the rest of the session:
    exists.
 4. For an **unsatisfying or off-putting** rejection, also ask for proof of coherence, if any exists:
    checks that each image matches its line (and images redone after one), reference portraits reused
-   for recurring characters, notes from a review pass before upload, and how runtime is decided. Never
-   present a check the user does not really run.
+   for recurring characters, notes from a review pass before upload, and how runtime is decided. Mark
+   each check in the inventory as "done" or "not done", and never present a check marked "not done"
+   (or one the user does not really run) in any doc, chapter or description.
 
 **Where the files are.** Claude reads files straight from the computer; nothing is linked or
 configured. Work from the folder Claude Code was started in. For files elsewhere, ask for the path (the
@@ -237,9 +247,24 @@ iCloud must be synced and available offline: "online only" files read as 0 bytes
 empty or missing, say so and ask; never build a doc from a file you could not read. Nothing carries
 over between sessions, so ask again in a new one.
 
+**Keep every working file inside the appeal folder.** Frames, contact sheets, captions, manifests,
+downloads and any helper Python venv go in an `appeal-work/` folder inside it, never in /tmp or
+another system folder: the user must be able to find, re-run and delete them, and /tmp can be wiped.
+
 **The minimum kit is the final video file plus its script.** Everything else makes the appeal
 stronger. If there is no written channel bible or rules, write them WITH the user from how they
 actually work (interview them), never invent rules they do not follow.
+
+**No final video file?** Common on long-form channels: exports get deleted to save space, and Studio
+downloads of long videos often fail. Do not stall on it; use this path:
+- **Subtitles and script stand-in:** YouTube's own captions of the published video, via yt-dlp
+  (Step 3b). They stand in for the .srt, and for the script when the user has no copy of it.
+- **Layers demo:** a screen recording of the editor's timeline playing (or the AI tool's project
+  page), made by the user.
+- **Voiceover:** exported by the user from the edit with the music muted.
+- **Frames:** pulled from the published video (Step 3c).
+Tell the user UPFRONT, in one short list, which of these pieces are their homework (typically the
+timeline recording and the voiceover export), so they can make them while you build the docs.
 
 Tools: Google Drive (connector, or upload HTML files by hand), something to list the channel's
 published videos and read its About (a YouTube data connector, the YouTube Data API, `yt-dlp`, or
@@ -368,6 +393,11 @@ List the channel's published videos (most popular first, and newest first).
 - **Arcs (unsatisfying / off-putting; 3 to 4 published):** episodes whose story moves by the
   characters' own choices, with titles that name a journey, a place or a real dilemma, and that passed
   the random-moment coherence check. No bait-titled episode, none with a mismatch found in Step 0.
+  **Fewer than 3 clean episodes?** Use the ones you have (even 1 or 2), tell the user plainly that the
+  case is weak because the catalogue has few clean stories, and put more weight on the Option 2 framing
+  (fix the catalogue and reapply; the appeal is a cheap extra). Never fill a slot with a borderline
+  episode (a reveal-driven turn, padding, a repeated scene, a title the video does not deliver) without
+  naming the compromise to the user and letting them decide.
 - **Walkthrough episode (1, every policy):** the recent episode with the most layers still on disk
   per the inventory (script, images or footage, prompts, voiceover, edit project). Finished but not yet
   published is ideal (it shows the next video is original too); a published one works. Prefer the
@@ -376,7 +406,10 @@ List the channel's published videos (most popular first, and newest first).
 ## Step 2. The channel documents (Google Drive folder)
 
 Create one Drive folder "<Channel> - Monetization Appeal". Write each doc as HTML and upload it with
-`text/html` as the content type: Drive converts it to a formatted Google Doc. If the Drive tool cannot
+`text/html` as the content type: Drive converts it to a formatted Google Doc. Without a Drive
+connector, the user uploads the HTML files by hand: tell them an uploaded .html becomes a Google Doc
+only when Drive's "Convert uploads" setting is on (Drive > Settings); otherwise they right-click the
+file > Open with > Google Docs. If the Drive tool cannot
 edit a Doc's content later, fix one by recreating it and trashing the old one. Avoid nested lists
 inside `<ol>` (Drive renumbers every item "1."). Images embed fine as `<img src="...">` with a direct
 public link.
@@ -403,7 +436,8 @@ public link.
 6. **Unsatisfying / off-putting: the arcs doc** (one section per episode: title, URL, setup, the
    characters' own choices, the turn, the resolution, the real facts it teaches) and **the coherence
    doc** (how picture, words and faces are kept together, with the one real example of each check from
-   the inventory, and how runtime is decided).
+   the inventory, and how runtime is decided). Only checks the inventory marks "done"; with none, skip
+   the coherence doc and say so to the user.
 
 ## Step 3. The annotated script (the strongest single document)
 
@@ -420,6 +454,10 @@ lines are skipped as headings.
 all export SRT), the AI video tool's captions, YouTube's captions if the video is uploaded (even
 unlisted), or transcribe the final video locally with Whisper
 (`pip install openai-whisper`, then `whisper final.mp4 --model small --output_format srt`).
+YouTube's captions need no video file:
+`yt-dlp --skip-download --write-subs --write-auto-subs --sub-langs "en.*" --convert-subs srt -o "appeal-work/%(id)s" <video URL>`
+(set the language to the channel's). With no script on disk, the captions also stand in for the
+script (say so in the annotated script's header).
 
 **c. Shot list** (`manifest.json`: `{"dur", "shots": [{"id","start","end","subject","kind"}],
 "ov": [{"type","at","payload"}], "chapters"}`), first route that applies:
@@ -427,10 +465,14 @@ unlisted), or transcribe the final video locally with Whisper
   XML / EDL, an AI video tool's scene list): convert it to this shape.
 - **Otherwise, rebuild it from the final video** (works for everything):
   ```
-  python3 <skill dir>/scripts/shotlist-from-video.py --video final.mp4 --out work --sheets 5
+  python3 <skill dir>/scripts/shotlist-from-video.py --video final.mp4 --out appeal-work --sheets 5
   ```
-  It finds the cuts, saves one frame per shot in `work/frames/` and contact sheets in
-  `work/sheets/`. Check the shot count looks right (slow zooms never cut; lower `--threshold` to
+  It finds the cuts, saves one frame per shot in `appeal-work/frames/` and contact sheets in
+  `appeal-work/sheets/`. **No final video file:** download only the stretch you need from the
+  published video, e.g. the first 2 to 3 minutes
+  (`yt-dlp --download-sections "*0:00-3:00" -f "bv*[height<=1080]+ba/b" -o "appeal-work/part.%(ext)s" <video URL>`),
+  and run the script on that part; pull single frames the same way (download a few seconds around
+  the moment, then ffmpeg). Check the shot count looks right (slow zooms never cut; lower `--threshold` to
   0.2 if shots merged, raise to 0.4 if one shot split). Then LOOK at the frames and fill in:
   - `subject`: the image prompt / scene description the shot was made from if the user has prompts
     (match by content and order), else a short plain description of what is on screen. Never write a
@@ -445,12 +487,12 @@ unlisted), or transcribe the final video locally with Whisper
 
 Run:
 ```
-python3 <skill dir>/scripts/annotate-script.py --manifest work/manifest.json \
+python3 <skill dir>/scripts/annotate-script.py --manifest appeal-work/manifest.json \
   --script script.md --srt subs.srt [--stills <images dir>] --channel-line "@Handle · <channel URL>" \
   --episode N --out annotated.html
 ```
 `--stills` is optional: point it at the user's own images folder if its files are named
-`NNN <shot id> ...`, or at `work/frames/`; without it shots are numbered in order. The printed match
+`NNN <shot id> ...`, or at `appeal-work/frames/`; without it shots are numbered in order. The printed match
 ratio must be ~1.0; lower means the subtitles and the script disagree (wrong script version, or a
 Whisper transcript with errors: still usable down to ~0.85). Upload the HTML as a Doc. A doc over
 ~50 KB goes up as two Docs (Part 1 / Part 2, split at a chapter heading).
@@ -471,14 +513,16 @@ Deliver ALL the layers, so the user can show the edit or stack it on a timeline:
 - **Voiceover MP3.** If the video has no music, the final video's audio IS the voice:
   `ffmpeg -i final.mp4 -vn -ac 1 -c:a libmp3lame -b:a 128k E<n>-voiceover.mp3`. With music, use the
   clean narration file, or regenerate it from the script with the same voice; never ship the mixed
-  track as "the voiceover".
+  track as "the voiceover". No final video file: the user exports the voiceover from the edit project
+  with the music track muted (their homework, named upfront in Setup).
 - **Music beds** if the channel uses them. Ask what the source is before the appeal names it;
   otherwise say only "a low ambient music bed".
 - **Host clips** on presenter channels: cut the presenter spans out of the final video with ffmpeg
   (`-ss a -to b`, re-encode) if the raw clips are gone; say they carry burned subtitles if they do.
 - **Subtitles** (.srt), texture / grain overlays if the channel uses any (state plainly when it uses
   none).
-- **Real frames** from finished videos (proof the cards ship):
+- **Real frames** from finished videos (proof the cards ship; with no final video file, from the
+  published video as in Step 3c):
   `ffmpeg -ss <t> -i final.mp4 -frames:v 1 -q:v 2 <name>.jpg` for the title card, 2 chapter cards,
   2-3 facts, 1 quote. Build a contact sheet and LOOK at it before reporting.
 - **The card templates themselves** (optional, if the channel uses on-screen cards): export them
@@ -501,7 +545,8 @@ About 20 seconds of the appeal show the walkthrough episode as a real editor tim
 (images or footage with their camera moves, voiceover, music, cards, subtitles, texture) stacked and
 playing. A kit without it is missing its most convincing proof of work.
 
-- **The user edits in an editor:** screen-record their real project for that episode.
+- **The user edits in an editor:** screen-record their real project for that episode (this works
+  with no final video file too: the timeline recording IS the layers demo).
 - **AI video tool, human editor or own automation:** rebuild the first ~2 minutes of the episode from
   its layers in any editor and present it as "how the layers fit together", never as "I cut each
   episode by hand" unless that is true.
@@ -548,7 +593,8 @@ For an **unsatisfying or off-putting** rejection, swap chapter 2 for the arcs (3
 arcs doc plus their watch pages, about 75 s), add "Coherence: how picture, words and faces are kept
 together" as a new chapter after chapter 5 (about 40 s: the image checked against its line and redone,
 the reference portrait across scenes, a review finding fixed), and keep the rest shorter so the video
-stays under 5 minutes.
+stays under 5 minutes. The coherence chapter shows only checks the inventory marks "done"; with none,
+leave the chapter out.
 
 **Chapter 1 answers the rejection first.** After the name, the first thing said is why the channel
 does not fall under the rejected policy. Reused: everything heard and seen was made for the channel
@@ -558,8 +604,10 @@ explained with our own facts, maps and captions). Generic or repetitive: every e
 story with its own setting, people and ending, and each one teaches real facts on screen (adapt to the
 niche). Unsatisfying or off-putting: every episode is a complete story with its own characters and a
 real arc, set in real history (or the niche's equivalent) and explained on screen, with picture and
-narration checked against each other. Only then the one-line description of the channel. Change ONLY that opening; keep the
-seven-chapter order and do not reorder the script around the argument.
+narration checked against each other (only if the inventory says the creator runs that check; if not,
+drop the clause here and everywhere else, and name a check they do run, or none). Only then the
+one-line description of the channel. Change ONLY that opening; keep the seven-chapter order and do not
+reorder the script around the argument.
 
 The Doc opens with a "Before you record" checklist (Step 0 findings as risks, disclosure, tab order,
 the real comment), every link it uses, and how to read it: CHAPTER lines, blue [SCREEN] cues naming the
@@ -579,7 +627,8 @@ appeal:
      place, a new period, a new case and a new structure." (adapt the four nouns to the niche)
    - unsatisfying / off-putting: "Each episode is a complete story with its own characters and arc,
      set in real history, with every scene image checked against the narration it sits under." (adapt
-     to the niche; say only what is true)
+     to the niche; say only what is true: if the inventory says images are not checked against the
+     narration, end the line at "set in real history" and drop the clause everywhere else too)
 4. Reused: "This video compares two published episodes to show they are separate stories, not one
    template repeated, and then walks through how a new episode is made, from <docs> to <layers> and
    the finished edit." Generic / repetitive: "This video shows ten published episodes side by side,
@@ -587,7 +636,8 @@ appeal:
    and how a new episode is made, from <docs> to <layers> and the finished edit." Unsatisfying /
    off-putting: "This video follows several published stories from setup to resolution, shows how
    every picture is matched to its line and every character kept the same from scene to scene, and how
-   a new episode is made, from <docs> to <layers> and the finished edit."
+   a new episode is made, from <docs> to <layers> and the finished edit." (Keep the matching and
+   same-character clauses only for checks the inventory marks "done"; drop the others.)
 
 Example (reused rejection, monetized after appeal):
 ```
@@ -643,6 +693,17 @@ left out on purpose (and why, in a "For you only" note in the script doc). Kits 
 kit are where pieces go missing (the layers demo, the chapters-and-facts cut, a reviewer doc still
 describing a retired rule). Re-read every reviewer doc against the CURRENT rules. Check the total
 runtime of the script is under 5 minutes.
+
+**Truth pass against the inventory.** Re-read every reviewer doc, the appeal script and the upload
+description against the evidence inventory (Setup). Any claim about a check, file or step the
+inventory marks "not done" (or never mentions) is removed before delivery, in every place it appears,
+not only where you first wrote it. Typical slip: "every image is placed under the line it illustrates"
+or "checked against the narration" when the creator said they do not check images.
+
+**No placeholders left.** No doc shown on screen (reviewer docs, annotated script, assets doc) may
+contain a `[YOU:` placeholder or any other fill-in marker. If an answer is still missing, ask the user
+for it or cut the sentence; placeholders belong only in the "Before you record" checklist and the "For
+you only" notes.
 
 Report: the Drive folder link, every doc link (including the Titles and Thumbnails sheet when one was
 made), the media folder, the route and the odds in one line

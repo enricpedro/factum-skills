@@ -64,8 +64,8 @@ own automation. It never asks you to tell YouTube anything untrue.
 | **Claude Code** (paid Claude plan) | runs the skill on your computer, where your files are | [claude.com/claude-code](https://claude.com/claude-code) |
 | **Python 3** | runs the two helper scripts (no extra packages) | Mac: run `xcode-select --install` if `python3` is missing · Windows: [python.org](https://www.python.org/downloads/) |
 | **ffmpeg** | finds the cuts in your video, pulls frames, makes the MP3 | Mac: `brew install ffmpeg` · Windows: `winget install Gyan.FFmpeg` |
-| **Google Drive connector** (recommended) | Claude creates the docs folder for you | claude.ai > Settings > Connectors > Google Drive. Without it, Claude writes HTML files and you upload them to Drive (they become Google Docs) |
-| **yt-dlp** | reads your channel's public video list (titles, views) from YouTube, no account or API key needed | Mac: `brew install yt-dlp` · Windows: `winget install yt-dlp.yt-dlp` · or `pip install yt-dlp`. If you already have a YouTube data connector in Claude, that works too |
+| **Google Drive connector** (recommended) | Claude creates the docs folder for you | claude.ai > Settings > Connectors > Google Drive. Without it, Claude writes HTML files and you upload them to Drive. An uploaded .html becomes a Google Doc only when Drive's "Convert uploads" setting is on (Drive > Settings); otherwise right-click the file > Open with > Google Docs |
+| **yt-dlp** | reads your channel's public video list (titles, views) and your videos' captions from YouTube, no account or API key needed | Mac: `brew install yt-dlp` · any system with Python: `pipx install yt-dlp` (plain `pip install yt-dlp` fails with "externally managed environment" on recent Python) · Windows: `winget install yt-dlp.yt-dlp`. If you already have a YouTube data connector in Claude, that works too |
 | Whisper (only if you have no subtitles) | makes subtitles from your video | `pip install openai-whisper` |
 | Pillow (optional) | trims transparent card images | `pip install pillow` |
 | Premiere Pro + `premiere-pro` MCP (optional) | Claude builds the layers demo timeline for you | any editor works: you can also screen-record your own project |
@@ -74,6 +74,18 @@ own automation. It never asks you to tell YouTube anything untrue.
 makes the appeal stronger: scene images and their prompts, voiceover, subtitles (.srt), edit project
 or AI-tool project, card templates, any notes on how you make the channel. Claude asks what you have
 and builds the appeal from that.
+
+**No final video file?** Common on long videos: the export was deleted to save space and the Studio
+download keeps failing. You can still build the full kit:
+
+- YouTube's own captions of the published video (Claude fetches them with yt-dlp) stand in for the
+  subtitles, and for the script if you have no copy.
+- A screen recording of your editor's timeline playing (about 20 seconds) is the layers demo.
+- The voiceover is exported from your edit with the music muted.
+- Frames come straight from the published video.
+
+The timeline recording and the voiceover export are your homework: Claude tells you so at the start,
+so you can make them while it builds the docs.
 
 
 ## Install
@@ -85,6 +97,13 @@ In a Claude Code session, run:
 ```
 /plugin marketplace add https://github.com/enricpedro/factum-skills.git
 /plugin install appeal-maker@factum-skills
+```
+
+Or, from a terminal (outside a session):
+
+```
+claude plugin marketplace add enricpedro/factum-skills
+claude plugin install appeal-maker@factum-skills
 ```
 
 Then restart Claude Code (or run `/reload-plugins`). The skill appears as `/appeal-maker:appeal-maker`.
@@ -124,7 +143,8 @@ only need the files on disk and Claude pointed at them.
      project/               your edit project, or screenshots of your tool or editor's timeline (optional)
      notes.txt              anything on how you make the channel: style rules, checklists (optional)
    ```
-   Only `final.mp4` and the script are required. Every extra file makes the appeal stronger.
+   Only `final.mp4` and the script are required (no video file anymore? see "No final video file?"
+   above). Every extra file makes the appeal stronger.
 2. **Start Claude Code inside that folder** (in Terminal: `cd "My Channel Appeal"` then `claude`).
    Files elsewhere: give Claude the path when it asks, or run `/add-dir <folder>` once.
 3. **Cloud folders** (Dropbox, Google Drive, iCloud): make the files **available offline** first.
@@ -134,7 +154,7 @@ only need the files on disk and Claude pointed at them.
 
 Your titles and thumbnails need nothing from you: they are public, so Claude reads them from YouTube
 with `yt-dlp` (or a YouTube data connector, or a list you paste). If YouTube answers "Sign in to confirm
-you're not a bot", update yt-dlp (`brew upgrade yt-dlp` or `pip install -U yt-dlp`) or paste the list.
+you're not a bot", update yt-dlp (`brew upgrade yt-dlp` or `pipx upgrade yt-dlp`) or paste the list.
 Nothing is remembered between sessions; if you start a new one, Claude asks again.
 
 ## Use it
@@ -142,7 +162,8 @@ Nothing is remembered between sessions; if you start a new one, Claude asks agai
 1. Open Claude Code in your appeal folder (see Before you start).
 2. Type `/appeal-maker:appeal-maker` (plugin install) or `/appeal-maker` (manual install), or just say
    something like:
-   *"My channel was rejected for reused content, make me an appeal."*
+   *"My channel was rejected for reused content, make me an appeal."* Plain words trigger it too:
+   *"My channel got demonetized for ..., can you help me appeal?"*
 3. Answer its questions: channel URL, the exact rejection reason, **which options the Studio
    rejection screen shows and the deadline**, whether you run other monetized channels, how you make
    an episode, and where your files are.
@@ -166,6 +187,8 @@ Nothing is remembered between sessions; if you start a new one, Claude asks agai
       against the whole method before handing it over.
    8. **Tells you how to avoid it next time**: what triggered the rejection on your channel and the
       production rules that prevent it.
+   Expect several long turns, not one quick answer: in testing, a full kit took about 4 heavy turns
+   (questions, audit, then the docs and the script).
 5. **Do the "Before you record" checklist** at the top of the appeal script doc. Then record:
    face cam for the open and close, screen recording for the middle, following the [SCREEN] cues.
 6. Upload the video as **Unlisted** on the same channel (keep it there) and submit its link in the
