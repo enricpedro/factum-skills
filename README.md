@@ -40,6 +40,12 @@ own automation. It never asks you to tell YouTube anything untrue.
 
 ## What's new
 
+**v1.1.1 (2026-11-20)**
+
+- "How to avoid this next time" now asks how strict you want to be: **Light** (keep revenue first,
+  only changes that cost no views), **Balanced** (small tests) or **Strict** (best odds at re-review,
+  including the costly changes). The appeal stays the main job; nothing is presented as a required cut.
+
 **v1.1.0 (2026-11-20)**
 
 - New rejection type: **unsatisfying or off-putting content**, the branch of "inauthentic content"

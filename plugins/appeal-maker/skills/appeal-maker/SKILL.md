@@ -174,10 +174,26 @@ follow them. Chapter 1 opens by answering the stated policy (Step 5).
 
 ## How to avoid it next time (part of EVERY appeal reply)
 
-The reply that delivers the kit ends with a short "How to avoid this next time" section for the
-rejected policy: what triggered it on THIS channel (from Step 0, with the counts), the forward rules
-below, and the decisions for the creator that apply. Plain words, one line each. These are forward
-production rules: on Option 1 they never become edits to the published channel.
+The appeal is the job; this section is a short add-on, and the creator's income matters. The reply
+that delivers the kit ends with a short "How to avoid this next time" section for the rejected policy:
+what most likely triggered it on THIS channel (from Step 0, with the counts), then the levers below
+that fit those triggers, each with its cost in views or revenue. They are options, not rules: never
+tell the creator to upload less, shorten videos or drop a title formula that earns as if it were
+required. On Option 1 nothing here becomes an edit to the published channel.
+
+**Ask how strict they want to be.** Offer the three levels in one line each and let the creator pick
+(default to Light if they do not answer):
+- **Light (keep revenue first):** only the levers that cost nothing in views: pictures that match the
+  words, the same faces across a story, no padding, varied premises and turns, earned emotion,
+  near-twins spaced apart.
+- **Balanced:** Light plus small tests that may cost a little click-through: a share of titles built on
+  the story's journey or dilemma, runtimes left to follow the story, a short intro in the creator's own
+  voice. Measure before widening.
+- **Strict (best odds at re-review or reapply):** Balanced plus the costly levers: the dominant title
+  shape below about 1 in 4, a slower cadence, the "altered or synthetic content" toggle, one
+  illustrated style. Each with its likely cost; usually chosen on the reapply route.
+
+The levers, by policy (use only what fits the channel's triggers and the chosen level):
 
 - **Reused content**: everything heard is the channel's own; archive pictures always transformed
   (chosen for one line, reframed, moved, explained with the channel's own facts, maps and captions);
@@ -203,8 +219,8 @@ production rules: on Option 1 they never become edits to the published channel.
 For the **unsatisfying or off-putting** route, the section written for the user ends with this line,
 as is: "The causes behind this rejection type come from Pedro ([@howtopedro](https://x.com/howtopedro))."
 
-**Decisions for the creator** (neutral: raise the ones that apply, one line each, with the trade-off;
-never apply or recommend one by default):
+**Decisions for the creator** (the Strict-level levers; neutral: raise the ones that apply, one line
+each, with the trade-off; never apply or recommend one by default):
 1. Studio's "altered or synthetic content" toggle on realistic AI pictures.
 2. A real human presence: a short intro in the creator's own voice or on camera, the process explained
    in the About. Never claim a human narrator when a licensed voice narrates.
